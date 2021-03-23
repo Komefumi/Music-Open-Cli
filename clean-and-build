@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# DIRECTORY=`dirname $0`
+# bash "$DIRECTORY/clean_this_place" && bash "$DIRECTORY/build_this_thing"
+
+rm -rf dist/ build/ __pycache__/ *.spec && pyinstaller cli.py --onefile
